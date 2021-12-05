@@ -1,0 +1,115 @@
+  body {
+    background-color: #f4f4f4;
+  }
+  
+  .border {
+    border: 1px solid black;
+  }
+  
+  .contenedorAll {
+    display: grid;
+    grid-template-columns: [head-col-start] 10% [content-col-start] 15% [content-col-mid] 65% [content-col-end] 10% [head-col-end];
+    grid-template-rows: [head-row-start] auto [head-row-end] 3% [content-row-endpic] auto [content-row-end] auto [footer-row-end];
+    font-family: "Nunito", sans-serif;
+  }
+
+  .header {
+    grid-column: head-col-start / head-col-end;
+    grid-row: head-row-start / head-row-end;  
+    margin-bottom: 2%;
+    text-align: center;
+    font-weight: 200;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .item {
+    color: white;
+    padding: 1.5em 0;
+    font-size: 2em;
+  }
+
+  .itemmenu {
+    color: white;
+    font-size: 1em;
+  }
+    
+  .sidebar {
+    grid-column: content-col-start / content-col-mid;
+    grid-row: head-row-end / content-row-end;
+    background: linear-gradient(to bottom, #0058ac, #1e8feb);
+    width: 90%;
+  }
+  
+  .content {
+    grid-column: content-col-mid / content-col-end;
+    grid-row: head-row-end / content-row-end;
+    background: #efefef;
+  }
+    
+  .footer {
+    grid-column: head-col-start / head-col-end;
+    grid-row: content-row-end / footer-row-end;
+    text-align: center;
+    background: #efefef;
+    margin-left: 10%;
+    margin-right: 10%;    
+  }
+  
+  article,
+  ul,
+  h3,
+  .header {
+    background-color: #e0e0e0;
+  }
+
+  .texto p{
+    text-align: center;
+    margin-top: 2%;
+    color: white;
+    font-size: 30%;
+  }
+
+  .sidebar > div > img{
+    grid-column: content-col-start / content-col-mid;
+    grid-row: head-row-end / content-row-endpic;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-left: 25%;
+    border-radius: 20%;
+  }
+
+  #menu {
+    display: grid;
+    justify-content: space-between;
+    display: block;
+    text-align: center;
+    margin-top: 2%;
+  }
+
+  a:hover {
+    background-color: #a59d95;
+  }
+  
+  #menu > a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+  }
+
+  p {
+    display: block;
+    color: black;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 50%;
+  }
+
+  h3,
+  article,
+  li{
+    color: black;    
+  }
